@@ -7,10 +7,30 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 
 </head>
 
 <body>
+
+  <div class="navbar">
+    <div class="logo"></div>
+    <a class="nav_btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">Content</a>
+      <a href="#">Portfolio</a>
+      <a href="#">About</a>
+    </div>
+  </div>
+  <div class="header">
+
+  </div>
 
   <div class="landing-page">
     <div class="page-content">
@@ -44,6 +64,14 @@
       <i class="fas fa-envelope-square"></i>
     </a>
   </div>
+
+  <script type="text/javascript">
+    $(".nav_btn").on("click", function () {
+      $('.menu').toggleClass("show");
+    });
+  </script>
+
+
 </body>
 
 </html>

@@ -5,12 +5,73 @@
   scroll-behavior: smooth;
 }
 
+.navbar {
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  background: #06304b;
+}
+
+.logo {
+  background: url(images/logo.jpg) no-repeat 50% 50%;
+  background-size: contain;
+  z-index: 1;
+  width: 180px;
+  height: 70px;
+  float: left;
+  margin-left: 20px;
+}
+
+.menu {
+  position: absolute;
+  right: 20px;
+
+}
+
+.menu a {
+  color: #c0392b;
+  text-decoration: none;
+  font-weight: 700;
+  margin-left: 20px;
+  transition: color 0.3s;
+  text-transform: uppercase;
+}
+
+.menu a:hover {
+  color: #fff;
+}
+
+.nav_btn {
+  display: none;
+  position: absolute;
+  right: 20px;
+}
+
+
+.nav_btn span {
+  display: block;
+  margin: 6px;
+  width: 40px;
+  height: 3px;
+  background: #c0392b;
+}
+
+.nav_btn:hover>span {
+  background: #fff;
+}
+
 .landing-page {
   width: 100%;
   height: 100vh;
   background: #000;
   position: relative;
   overflow: hidden;
+  margin-top: 80px;
 }
 
 .landing-page::after {
@@ -117,12 +178,11 @@
 
 .footer {
   position: absolute;
-  /* transform: translateY(100%); */
   height: auto;
   z-index: 1;
   width: 100%;
   text-align: center;
-  background: #7f8c8d;
+  background: #06304b;
 }
 
 .btn {
@@ -196,5 +256,37 @@
   100% {
     left: -10%;
     top: -10%;
+  }
+}
+
+
+@media only screen and (max-width : 600px) {
+  .navbar {
+    overflow: visible;
+  }
+
+  .menu {
+    width: 100%;
+    right: 0;
+    top: 80px;
+    background: #06304b;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+  .menu a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .nav_btn {
+    display: block;
+    cursor: pointer;
+  }
+
+  .show {
+    max-height: 500px;
   }
 }
