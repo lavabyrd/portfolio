@@ -18,10 +18,11 @@
 }
 
 .logo {
-  background: url(images/logo.jpg) no-repeat 50% 50%;
-  background-size: contain;
+  border-radius: 50%;
+  background: url(images/logo.jpg) no-repeat 50% 5%;
+  background-size: cover;
   z-index: 1;
-  width: 180px;
+  width: 80px;
   height: 70px;
   float: left;
   margin-left: 20px;
@@ -72,7 +73,6 @@
   background: #242A2E;
   position: relative;
   overflow: hidden;
-  margin-top: 80px;
 }
 
 .landing-page::after {
@@ -125,7 +125,6 @@
 .page-content p {
   color: #fff;
   margin-bottom: 20px;
-
 }
 
 .page-content a {
@@ -143,17 +142,18 @@
   background: #FF6F77;
 }
 
+div.text-bg {
+  padding-top: 80px;
+}
 
-.text p {
-  position: relative;
+.text {
+  position: absolute;
   width: 100%;
-  max-width: 800px;
   text-align: center;
-  padding: 30px 10px 0px 30px;
+  padding-top: 30px;
   box-sizing: border-box;
   z-index: 1;
   color: #fff;
-
 }
 
 .text-bg {
@@ -162,15 +162,8 @@
   background: #242A2E;
   position: relative;
   overflow: hidden;
-  /* margin-top: 80px; */
-
 }
 
-div.text-bg {
-  display: block;
-  position: relative;
-  padding-top: 80px;
-}
 
 .text-bg::after {
   content: "";
@@ -188,19 +181,26 @@ div.text-bg {
 
 .footer {
   position: absolute;
-  height: auto;
+  height: 20%;
   z-index: 1;
   width: 100%;
   text-align: center;
   background: #242A2E;
 }
 
+.footer p {
+  color: #08E5EC;
+  text-align: right;
+  padding-right: 35px;
+}
+
 .social_btn {
   display: inline-block;
   width: 90px;
   height: 90px;
+  top: 25%;
   background: #AD585C;
-  margin: 10px;
+  margin: 20px;
   border-radius: 30%;
   box-shadow: 0 5px 15px -5px #00000070;
   color: #08E5EC;
@@ -273,6 +273,10 @@ div.text-bg {
 @media only screen and (max-width : 600px) {
   .navbar {
     overflow: visible;
+  }
+
+  .logo {
+    display: none;
   }
 
   .menu {
