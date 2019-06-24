@@ -111,14 +111,18 @@
   background: url(images/bg-body.jpg) no-repeat;
   background-size: cover;
   opacity: .5;
+  animation: header 8s linear 1;
+  animation-fill-mode: forwards;
 }
 
 .footer {
   position: absolute;
-  transform: translateY(-100%);
+  /* transform: translateY(100%); */
+  height: auto;
   z-index: 1;
   width: 100%;
   text-align: center;
+  background: #7f8c8d;
 }
 
 .btn {
