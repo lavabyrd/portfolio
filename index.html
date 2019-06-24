@@ -22,8 +22,8 @@
       <span></span>
     </a>
     <div class="menu">
-      <a href="#">Home</a>
-      <a href="#">Content</a>
+      <a id="home_nav" onclick="scrollWin('landing')">Home</a>
+      <a id="nav-body" onclick="scrollWin('main-body')">Content</a>
       <a href="#">Portfolio</a>
       <a href="#">About</a>
     </div>
@@ -32,14 +32,14 @@
 
   </div>
 
-  <div class="landing-page">
+  <div id="landing" class="landing-page">
     <div class="page-content">
       <h1>Coming soon</h1>
       <p>
         This is the Portfolio for Mark Preston, of Dublin Ireland.
 
       </p>
-      <a href="#main-body">Read more</a>
+      <a id="scroll-down" onclick="scrollWin('main-body')">Read more</a>
     </div>
   </div>
   <div class="text-bg" id="main-body">
@@ -65,11 +65,7 @@
     </a>
   </div>
 
-  <script type="text/javascript">
-    $(".nav_btn").on("click", function () {
-      $('.menu').toggleClass("show");
-    });
-  </script>
+  <script src="script.js"></script>
 
 
 </body>
