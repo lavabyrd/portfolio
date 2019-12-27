@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  .navbar
+  .logo
+  a.nav_btn
+    span
+    span
+    span
+  .menu
+    a#home_nav(onclick="scrollWin('landing')") Home
+    a#nav-body(onclick="scrollWin('main-body')") Content
+    a(href='#') Portfolio
+    a(href='#') About
+  .header
+  #landing.landing-page
+    .page-content
+      h1 Adventures in Development
+      p
+        | This is the Portfolio for Mark Preston, of Dublin Ireland.
+      a#scroll-down(onclick="scrollWin('main-body')") Read more
+  #main-body.text-bg
+    .text
+      p
+        | Welcome to Adventures in Development. This site will act
+        | as the portfolio and some tidbits for my journey through web development.
+        br
+        |         I mainly focus on backend and API interactions but currently upskilling on frontend as you can see here.
+        br
+        br
+        |         More to follow
+  .footer
+    a.social_btn(href='https://twitter.com/splinterific')
+      i.fab.fa-twitter
+    a.social_btn(href='https://www.linkedin.com/in/mgpreston')
+      i.fab.fa-linkedin
+    a.social_btn(href='https://github.com/splinterific')
+      i.fab.fa-github
+    a.social_btn(href='mailto:markgpreston@gmail.com')
+      i.fas.fa-envelope-square
+    p Designed by Mark Preston - 2019
+  script(src='script.js')
