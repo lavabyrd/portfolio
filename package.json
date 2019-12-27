@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "build": "netlify-lambda build express",
+    "build": "netlify-lambda build express_app",
     "start": "node ./bin/www"
   },
   "dependencies": {
@@ -12,9 +12,9 @@
     "express": "^4.16.4",
     "express-generator": "^4.16.1",
     "http-errors": "^1.6.3",
-    "jade": "^1.11.0",
     "morgan": "^1.9.1",
     "netlify": "^3.0.0",
-    "pug": "^2.0.4"
+    "pug": "^2.0.4",
+    "serverless-http": "^2.3.0"
   }
 }
