@@ -1,0 +1,4 @@
+include port/schema.sql
+graft port/static
+graft port/templates
+global-exclude *.pyc
