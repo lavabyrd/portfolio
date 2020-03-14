@@ -23,7 +23,7 @@ def create_app(test_config=None):
     except OSError:
         pass
 
-    #basic page
+    # basic page
     @app.route('/hello')
     def hello():
         return 'hello!'
