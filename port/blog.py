@@ -9,7 +9,7 @@ from port.db import get_db
 bp = Blueprint('blog', __name__)
 
 
-@bp.route('/')
+@bp.route('/blog_frontend')
 def index():
     db = get_db()
     posts = db.execute(

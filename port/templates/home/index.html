@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Portfolio - Mark Preston</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='style_updated.css')}}">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -71,7 +71,7 @@
     <p>Designed by Mark Preston - 2019</p>
   </div>
 
-  <script src="script.js"></script>
+  <script src="{{ url_for('static', filename='script.js')}}"></script>
 
 
 </body>
